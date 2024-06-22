@@ -1,0 +1,32 @@
+# Arquivos relacionados a configuração:
+config.json
+.env
+
+# Arquivos Relacionados a node.js:
+node_modules/
+
+# Arquivos de imagens, video e audio
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.mp3
+
+# Arquivos gerados por IDES e editores
+/.idea/
+/.vscode/
+/*.code-workspace
+
+# Arquivos temporarios e backup
+*.bak
+*.tmp
+*.old
+*.swp
+*.swo
+.DS_Store
+thumbs.db
+
+# Arquivos de banco de dados local
+*.sqlite3
+*.db
