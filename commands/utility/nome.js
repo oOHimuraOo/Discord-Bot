@@ -1,9 +1,8 @@
 const { SlashCommandBuilder } = require('discord.js');
-const wait = require('node:timers/promises').setTimeout;
 
 module.exports = {
 	category: 'utility',
-	cooldown: 30,
+	cooldown: 5,
 	data: new SlashCommandBuilder()
 		.setName('nome')
 		.setDescription('Implementa um novo apelido ao usuario')
@@ -22,7 +21,6 @@ module.exports = {
 
 		await interaction.reply(`o nome digitado foi: ${inputNome}`);
         await interaction.followUp(`o usuario selecionado foi: ${inputUser}`);
-        await wait(2_000);
 
         const guild = interaction.guild;
         const member = await guild.members.fetch(inputUser.id);
